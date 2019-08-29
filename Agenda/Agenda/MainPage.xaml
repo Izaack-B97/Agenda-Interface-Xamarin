@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     x:Class="Agenda.MainPage" BackgroundColor="DarkGray">
+
+
+    <StackLayout Margin="10,35,10,10">
+        <Image Source="https://en.wikipedia.org/wiki/User_(computing)#/media/File:User_icon_2.svg"/>
+        <!-- Place new controls here -->
+        <Label Text="Agenda Telefònica" 
+                   HorizontalOptions="Start"
+                   FontSize="30"/>
+        <Entry x:Name="Apellido" Placeholder="Apellido" PlaceholderColor="Black"/>
+        <Entry x:Name="Nombre" Placeholder="Nombre" PlaceholderColor="Black"/>
+        <Entry x:Name="Celular" Placeholder="Celular" PlaceholderColor="Black"/>
+        <Entry x:Name="Correo" Placeholder="example@mail.com" PlaceholderColor="Black"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Text="Crear contacto"/>
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
+
